@@ -20,7 +20,8 @@ public class User {
     private Integer version;
     @TableLogic//逻辑删除
     private Integer deleted;
-  @TableField(fill = FieldFill.INSERT)
+
+   @TableField(fill = FieldFill.INSERT)
     private Date gmcCreate;
 
     //CURRENT_TIMESTAMP

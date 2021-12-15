@@ -98,5 +98,8 @@ class MybatisPlusApplicationTests {
         userMapper.deleteByMap(map);
     }
 
+    //wrapper 测试
+
+
 
 }
