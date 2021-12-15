@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-   // @TableId(type = IdType.ID_WORKER )
+  // @TableId(type = IdType.ID_WORKER )
     private Long id;
     private String name;
     private Integer age;
