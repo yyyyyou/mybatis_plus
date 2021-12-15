@@ -23,7 +23,6 @@ public class User {
 
    @TableField(fill = FieldFill.INSERT)
     private Date gmcCreate;
-
     //CURRENT_TIMESTAMP
    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmcModified;
