@@ -23,7 +23,7 @@ public class codeCreate {
 
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath+"src/main/java");
+        gc.setOutputDir(projectPath+"/src/main/java");
         gc.setAuthor("yy");
         gc.setOpen(false);
         gc.setFileOverride(false);//是否覆盖
@@ -37,7 +37,7 @@ public class codeCreate {
         //数据源配置
         DataSourceConfig dc = new DataSourceConfig();
 
-        dc.setUrl("jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&useSSL=true");
+        dc.setUrl("jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&useSSL=true&serverTimezone=GMT%2B8");
         dc.setUsername("root");
         dc.setPassword("123456");
         dc.setDriverName("com.mysql.jdbc.Driver");
@@ -47,7 +47,7 @@ public class codeCreate {
         //三 包的配置
         PackageConfig pc = new PackageConfig();
         pc.setController("controller");
-        pc.setModuleName("xinhui");
+        pc.setModuleName("picture");
         pc.setParent("com.yao");
         pc.setEntity("entity");
         pc.setMapper("mapper");
@@ -56,7 +56,7 @@ public class codeCreate {
 
         //四 策略配置
         StrategyConfig sc = new StrategyConfig();
-        sc.setInclude("表名");//这里修改表明就可以
+        sc.setInclude("picture");//这里修改表明就可以
         sc.setNaming(NamingStrategy.underline_to_camel);
         sc.setColumnNaming(NamingStrategy.underline_to_camel);
         sc.setEntityLombokModel(true);

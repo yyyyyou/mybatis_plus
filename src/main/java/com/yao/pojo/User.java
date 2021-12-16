@@ -22,10 +22,10 @@ public class User {
     private Integer deleted;
 
    @TableField(fill = FieldFill.INSERT)
-    private Date gmcCreate;
+    private Date gmtCreate;
     //CURRENT_TIMESTAMP
   
    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Date gmcModified;
+    private Date gmtModified;
 
 }

@@ -13,13 +13,13 @@ public class MyDataHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
     log.info("插入开始了；；；；；；");
-    this.setFieldValByName("gmcCreate",new Date(),metaObject);
-    this.setFieldValByName("gmcModified",new Date(),metaObject);
+    this.setFieldValByName("gmtCreate",new Date(),metaObject);
+    this.setFieldValByName("gmtModified",new Date(),metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
         log.info("更新开始了；；；；；；");
-        this.setFieldValByName("gmcModified",new Date(),metaObject);
+        this.setFieldValByName("gmtModified",new Date(),metaObject);
     }
 }
