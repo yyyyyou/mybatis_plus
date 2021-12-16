@@ -19,7 +19,7 @@ import java.util.List;
 public interface PictureService extends IService<Picture> {
 
   Integer insertPicture(Picture picture);
- 
+
     List<Picture> getAllPictureList();
 
     Picture getSinglePicture(Integer id);
