@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.yao.utils.ResultT;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -27,4 +28,5 @@ public interface PictureService extends IService<Picture> {
     Integer updatePictureById(Picture picture);
 
     Integer deletePictureById(Integer id);
+    Integer deletePicture(Arrays[] arrays);
 }

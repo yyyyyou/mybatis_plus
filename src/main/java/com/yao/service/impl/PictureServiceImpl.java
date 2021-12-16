@@ -9,6 +9,8 @@ import com.yao.utils.ResultT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -55,6 +57,19 @@ public class PictureServiceImpl extends ServiceImpl<PictureMapper, Picture> impl
     public Integer deletePictureById(Integer id) {
         int i = pictureMapper.deleteById(id);
         return i;
+    }
+
+    @Override
+    public Integer deletePicture(Arrays[] arrays) {
+        int a=0;
+        for (int i = 0; i < arrays.length; i++) {
+             pictureMapper.deleteById((Serializable) arrays[i]);
+
+             a++;
+        }
+
+        return a==arrays.length ? 0 :1;
+
     }
 
 

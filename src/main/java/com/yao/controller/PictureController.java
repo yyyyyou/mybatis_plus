@@ -70,6 +70,11 @@ public class PictureController {
         return pictureService.deletePictureById(id) > 0 ?new ResultT().ResultSuccess("删除成功") : new ResultT().ResultError("删除失败") ;
 
     }
+    @DeleteMapping("/delete")
+    public ResultT deletePicture(Arrays[] arrays){
+        return pictureService.deletePicture(arrays) == 0 ?new ResultT().ResultSuccess("删除成功") : new ResultT().ResultError("删除失败") ;
+
+    }
 
 
 }
